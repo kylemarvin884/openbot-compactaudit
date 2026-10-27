@@ -1,0 +1,34 @@
+{
+  "name": "compactaudit",
+  "version": "0.1.0",
+  "description": "Audit what a context-compaction summary dropped: constraints, file paths, commands, failures, and TODOs.",
+  "type": "module",
+  "bin": {
+    "compactaudit": "./src/cli.mjs"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node src/cli.mjs --help",
+    "demo": "node demo/demo.mjs",
+    "test": "node --test test/parse.test.mjs test/extract.test.mjs test/match.test.mjs test/audit.test.mjs test/cli.test.mjs"
+  },
+  "keywords": [
+    "coding-agent",
+    "context",
+    "compaction",
+    "summarization",
+    "claude-code",
+    "transcript",
+    "cli",
+    "agent-reliability"
+  ],
+  "license": "MIT",
+  "author": "Xiao-KL"
+}
